@@ -13,11 +13,20 @@ body {
     /* color: orange; */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'IBM Plex Serif', serif;
 }
 
-.cv-header, .profile, .experience, .company-name {
+
+.cv-header,
+.profile,
+.experience,
+.company-name {
     font-family: 'IBM Plex Serif', serif;
 }
 
@@ -39,9 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #131313;
 }
 
-.photo-block {
-
-}
+.photo-block {}
 
 .cv-left a {
     color: #fff;
@@ -66,15 +73,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 article {
-     padding: 20px;
+    padding: 20px;
 }
 
 .company-name {
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
-.company-name i{
+.company-name i {
     font-size: .8rem;
     font-family: Aria, sans-serif;
     text-transform: none;
@@ -86,10 +92,19 @@ article {
     letter-spacing: 5px;
 }
 
+.teacher {
+    margin-top: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
 .lines {
     overflow: hidden;
 }
-.lines::before, .lines::after {
+
+.lines::before,
+.lines::after {
     content: "";
     display: inline-block;
     box-sizing: border-box;

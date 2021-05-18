@@ -6,11 +6,18 @@ document.querySelector('.profile-data').textContent = data.profile;
  */
 let expirienceData = '';
 experience.forEach(item => {
-    expirienceData += `<section class="mb-5">`;
-    expirienceData += ` <h4 class="company-name mb-2">${item.company} - ${item.city}, <i>${item.from} - ${item.to}</i></h4>`;
-    expirienceData += `<h5>${item.position}</h5>`;
-    expirienceData += `<p>${item.description}</p>`;
-    expirienceData += `</section>`;
+    expirienceData += `
+                        <section class="mb-5">
+                        <h2 class="company-name mb-2">${item.company} - ${item.city} <p class="teacher">${item.from}</p></h2>
+                    `;
+    for (let key in item.allPos) {
+        expirienceData += `
+                            <h6>${key}</h6>
+                            <p>${item.allPos[key]}</p>
+                        `;
+        console.log(key, item.allPos[key]);
+    } 
+    expirienceData += `</section>`;                       
 });
 document.querySelector('.experience-list').innerHTML = expirienceData;
 
